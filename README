@@ -1,9 +1,7 @@
-Local manifest addon for building CM10 Jelly Bean for the Kindle Fire
+Local manifest addon for building AOSP Jelly Bean for the PrimoC/U
 
 Getting Started
 ---------------
-
-To get started with please see our [wiki](https://github.com/KFire-Android/android_local_manifest/wiki).
 
 Make a build directory:
 
