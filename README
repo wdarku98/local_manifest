@@ -1,0 +1,35 @@
+Local manifest addon for building CM10 Jelly Bean for the Kindle Fire
+
+Getting Started
+---------------
+
+To get started with please see our [wiki](https://github.com/KFire-Android/android_local_manifest/wiki).
+
+Make a build directory:
+
+	mkdir Andoid (or whatever name you choose)
+	cd Android (or the name  you chose)
+	
+
+To initialize your local repository using the AOSP manifest, use commands like these:
+
+    repo init -u https://android.googlesource.com/platform/manifest.git -b master
+    
+    curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/Aosp-Primo/local_manifest/master/local_manifest.xml
+
+    	( or Download: https://github.com/Aosp-Primo/local_manifest/blob/master/local_manifest.xml
+		and place it in ~/Android/.repo/local_manifest.xml (or ~/'name you chose'/.repo)
+
+Then to sync up:
+
+    repo sync --current-branch
+
+And finally to build the AOSP ROM:
+
+    . build/envsetup.sh
+    lunch 
+    (pick number of device)
+    make -j4 otapackage
+
+Look for out/target/product/device/ for the zip
+
