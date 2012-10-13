@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <manifest>
+
+  <remote  name="primo"
+           fetch="https://github.com/Aosp-Primo" 
+           revision="master" />
+           
+  <!-- AOSP removals -->
+  <remove-project name="platform/build" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/libhardware_legacy" />
+  <remove-project name="platform/hardware/msm7k" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/display" />
+
+  <!-- modified AOSP projects -->
+  <project path="build" name="build" remote="primo" />
+  <project path="hardware/libhardware" name="libhardware" remote="primo" />
+  <project path="hardware/libhardware_legacy" name="libhardware_legacy" remote="primo"  />
+  <project path="hardware/msm7k" name="msm7k" remote="primo"  />
+  <project path="hardware/qcom/audio" name="audio" remote="primo" />
+  <project path="hardware/qcom/media" name="media" remote="primo" />
+  <project path="hardware/qcom/gps" name="gps" remote="primo" />
+  <project path="hardware/qcom/display" name="display" remote="primo" />
+
+  <!-- local projects -->
+  <project path="vendor/primo" name="vendor_primo" remote="primo" revision="JB-TESTING" />
+  <project path="device/htc/msm7x30-common" name="msm7x30-common" remote="primo" revision="jb" />
+  <project path="vendor/qcom/proprietary" name="proprietary" remote="primo" revision="jellybean" />
+  <project path="device/htc/primou" name="primou" remote="primo" revision="aosp-testing" />
+  <project path="device/htc/primoc" name="primoc" remote="primo" revision="jellybean" />
+    
+  </manifest>
