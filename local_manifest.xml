@@ -6,17 +6,12 @@
            revision="master" />
            
   <!-- AOSP removals -->
-  <remove-project name="platform/build" />
-  <remove-project name="platform/hardware/libhardware" />
-  <remove-project name="platform/hardware/libhardware_legacy" />
   <remove-project name="platform/hardware/msm7k" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/gps" />
 
   <!-- modified AOSP projects -->
   <project path="build" name="build" remote="primo" revision="jellybean" />
-  <project path="hardware/libhardware" name="libhardware" remote="primo" />
-  <project path="hardware/libhardware_legacy" name="libhardware_legacy" remote="primo" />
   <project path="hardware/msm7k" name="msm7k" remote="primo" />
   <project path="hardware/qcom/media" name="media" remote="primo" />
   <project path="hardware/qcom/gps" name="gps" remote="primo" />
