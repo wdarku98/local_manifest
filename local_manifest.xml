@@ -14,12 +14,12 @@
   <remove-project name="platform/hardware/qcom/gps" />
 
   <!-- modified AOSP projects -->
-  <project path="build" name="build" remote="primo" />
-  <project path="hardware/libhardware" name="libhardware" remote="primo" />
-  <project path="hardware/libhardware_legacy" name="libhardware_legacy" remote="primo"  />
-  <project path="hardware/msm7k" name="msm7k" remote="primo"  />
-  <project path="hardware/qcom/media" name="media" remote="primo" />
-  <project path="hardware/qcom/gps" name="gps" remote="primo" />
+  <project path="build" name="build" remote="primo" revision="jb" />
+  <project path="hardware/libhardware" name="libhardware" remote="primo" revision="jb" />
+  <project path="hardware/libhardware_legacy" name="libhardware_legacy" remote="primo" revision="jb"  />
+  <project path="hardware/msm7k" name="msm7k" remote="primo" revision="jb"  />
+  <project path="hardware/qcom/media" name="media" remote="primo" revision="jb" />
+  <project path="hardware/qcom/gps" name="gps" remote="primo" revision="jb" />
 
   <!-- local projects -->
   <project path="vendor/primo" name="vendor_primo" remote="primo" revision="JB-TESTING" />
